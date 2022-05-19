@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #67b26b, #4ca2cb);
+  background: -o-linear-gradient(left, #67b26b, #4ca2cb);
+  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  background: linear-gradient(to right, skyblue -50%, purple 150%);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper-test {
+  font: 2em Arial, sans-serif;
+  color: #060a88;
+}
+.wrapper-index {
+  /* padding: 20px; */
+  padding: 2em .5em 0;
+}
+.wrapper_header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: .4em;
+}
+.header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  font: bold 1.2em Arial, serif;
+  padding: .4em;
+}
+.header__test {
+  width: 70%;
+  align-items: center;
+  padding: 0;
+}
+.main {
+  padding: 40px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: .4em;
+  padding-top: 0;
+}
+.main__index {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__gender {
+  padding: 0 2em;
+}
+.words {
+  width: 55%;
+  font: 2.4em Arial, sans-serif;
+  background: -webkit-linear-gradient(left, #24038a, #0d89a5);
+  background: -o-linear-gradient(left, #24038a, #0d89a5);
+  background: linear-gradient(to right, #24038a, #0d89a5);
+  border: 3px solid #000;
+  border-radius: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+  /* transition: all 0.4s ease 0s; */
+}
+.words__number {
+  width: 40%;
+}
+.words_link__index {
+  width: 100%;
+  justify-content: center;
+}
+.words__another {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.gender {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+
+}
+.words__gender {
+  width: 25%;
+}
+.words_link {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: .5em;
+}
+.words_link__center {
+  justify-content: center;
+}
+.words:hover {
+  background: -webkit-linear-gradient(to right, #150056, #026d86);
+  background: -o-linear-gradient(to right, #150056, #026d86);
+  background: linear-gradient(to right, #150056, #026d86);
+}
+.words__index {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+.back {
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+margin-bottom: 1em;
+}
+.back_link {
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+width: 100%;
+padding-left: .4em;
+transition: background .4s;
+
+}
+.back_link:hover {
+  background: rgba(0,0,0,.2);
+}
+.back__test {
+  width: 15%;
+  margin: 0;
+}
+.number {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pad {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+}
+.comp {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #000;
+  font-weight: bold;
+  width: 15%;
+  padding: .4em;
+  overflow: hidden;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.enter {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  background: inherit;
+  font: 30px Arial, sans-serif;
+  font-style: italic;
+  color: inherit;
+  width: 100%;
+  border: 0;
+  text-align: center;
+  outline: none;
+}
+.button {
+  display: inline-block;
+  background: #273439;
+  color: #fff;
+  /* border: 5px solid #000; */
+  border-radius: 15px;
+  padding: .4em 1em;
+  margin: .5em;
+  cursor: pointer;
+  -webkit-transition: background .3s, opacitz .5s;
+  -o-transition: background .3s, opacitz .5s;
+  transition: background .3s, opacitz .5s;
+}
+.button:hover {
+  background: #0e232e;
+}
+.footer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+.wrong {
+  background: red;
+}
+.corectly {
+  background: #05ca0d;
+  font-style: normal;
+}
+.italic {
+  font-style: italic;
+}
