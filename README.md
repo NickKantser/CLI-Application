@@ -1,5 +1,25 @@
 # File Client
 
+## Description
+Simple CLI application which retrieves and prints data from server
+
+    Usage: file-client [options] stat UUID
+           file-client [options] read UUID
+           file-client --help
+
+    UUID - id of the file
+
+    Subcommands:
+      stat                  Prints the file metadata in a human-readable manner.
+      read                  Outputs the file content.
+
+    Options:
+      --help                Show this help message and exit.
+      --backend             Set a backend to be used, choices are grpc and rest. Default is grpc.
+      --grpc-server         Set a host and port of the gRPC server. Default is localhost:50051.
+      --base-url            Set a base URL for a REST server. Default is http://localhost/.
+      --output              Set the file where to store the output. Default is -, i.e. the stdout.
+
 ## Installation (For Linux/Mac)
 ### Virtual environment
 First of all in the folder with setup.py open the terminal and create virtual environment
