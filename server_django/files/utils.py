@@ -25,16 +25,3 @@ class FileMetaData:
                     }
 
         return context
-
-# def get_file_meta_data(uuid):
-#     file = get_object_or_404(File, pk=uuid)
-#     filename = os.path.basename(file.file.name)
-#     mimetype = mimetypes.guess_type(file.file.name)[0]
-#
-#     context = { 'created_at': file.created_at,
-#                 'size': file.file.size,
-#                 'mimetype': mimetype,
-#                 'name': filename,
-#                 }
-#
-#     return context
