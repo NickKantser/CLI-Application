@@ -15,9 +15,9 @@ Simple CLI application which retrieves and prints data from server
 
     Options:
       --help                Show this help message and exit.
-      --backend             Set a backend to be used, choices are grpc and rest. Default is grpc.
-      --grpc-server         Set a host and port of the gRPC server. Default is localhost:50051.
-      --base-url            Set a base URL for a REST server. Default is http://localhost/.
+      --backend             Set a backend to be used, choices are django and flask. Default is django.
+      --django-server       Set a host and port of the Django server. Default is localhost:8000 .
+      --flask-server        Set a host and port of the Flask server. Default is 127.0.0.1:5000.
       --output              Set the file where to store the output. Default is -, i.e. the stdout.
 
 ## Installation (For Linux/Mac)
