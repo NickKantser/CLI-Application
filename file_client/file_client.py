@@ -40,21 +40,21 @@ def check_response(func):
 
 
 @click.group(context_settings={'show_default': True}) # All option's default is showing
-@click.option('--backend',  type=click.Choice(['grpc', 'rest'],
-              case_sensitive=False), default='grpc',
-              help='Set a backend to be used, choices are grpc and rest.')
-@click.option('--grpc-server', default='localhost:50051',
-              help='Set a host and port of the gRPC server.')
-@click.option('--base-url', default='http://localhost/',
-              help='Set a base URL for a REST server.')
+@click.option('--backend',  type=click.Choice(['django', 'flask'],
+              case_sensitive=False), default='django',
+              help='Set a backend to be used, choices are django and flask.')
+@click.option('--django-server', default='localhost:8000',
+              help='Set a host and port of the Django server.')
+@click.option('--flask-server', default='127.0.0.1:5000',
+              help='Set a host and port of the Flask server.')
 @click.option('--output', default='-', type=click.File('wb'),
               help='Set the file where to store the output.')
 @click.pass_context
-def cli(ctx, backend, grpc_server, base_url, output):
-    if backend == 'grpc':
-        url = grpc_server
+def cli(ctx, backend, django_server, flask_server, output):
+    if backend == 'django':
+        url = django_server
     else:
-        url = base_url
+        url = flask_server
 
     # appending http:// to the beginning of the address if it is not there
     url = url if url.startswith('http://') else ('http://' + url)
